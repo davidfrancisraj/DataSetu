@@ -1,0 +1,55 @@
+:root {
+	--primary: #613ae7;
+	--alt    : #687992;
+	--dark   : #1c1d22;
+	--blue   : #0089ff;
+	--yellow : #f8bc3b;
+	--border : #cee6ff; 
+}
+
+body {
+	background-color: var(--dark);
+	color: #fff;
+	font-family: 'Inter', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1300px;
+}
+
+.list-inline {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.txt-yellow {
+	color: var(--yellow);
+}
+
+.txt-blue {
+	color: var(--blue);
+}
+
+.txt-alt, .txt-alt a {
+	color: var(--alt);
+}
+
+.bg-prime {
+	background-color: var(--primary);
+}
+
+.txt-small {
+	font-size: 12px;
+}
+
+.nav-tabs {
+	border: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
