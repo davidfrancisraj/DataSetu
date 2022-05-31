@@ -5,25 +5,125 @@
 	--blue   : #0089ff;
 	--yellow : #f8bc3b;
 	--border : #cee6ff; 
+	--secondary: #24374e;
+	--gutter-x6: 3rem;
+}
+
+html {
+	font-size: 10px;
 }
 
 body {
 	background-color: var(--dark);
 	color: #fff;
 	font-family: 'Inter', sans-serif;
+	font-size: 1.6rem;
 }
 
 a {
 	text-decoration: none;
 }
 
-.container {
-	max-width: 1300px;
+img {
+    max-width: 100%;
 }
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
+	margin-bottom: 2rem;
+}
+
+p {
+	margin-bottom: 2rem;
+}
+
+.container-fluid, .container, .container-lg { 
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.container {
+	max-width: 1320px;	
+}
+
+.container-lg { 
+    max-width: 1500px;
+}
+
+.btn-primary {
+	background-color: var(--primary);
+	border-color:  var(--primary);
+}
+
+.btn-primary:hover {
+	background-color: var(--blue);
+	border-color:  var(--blue);
+}
+
+.btn-secondary {
+	background-color: var(--secondary);
+	border-color:  var(--secondary);
+}
+
+.btn {
+border-radius: 4px;
+padding: 12px 30px;
+font-size: 1.4rem;
+transition: .4s ease;
+will-change: transition;
+}	
+
+.bg-primary {
+	background-color: var(--primary) !important;
+}
+
+.gx-6.row {
+	margin-left: - var(--gutter-x6);
+}
+
+.gx-6.row > * {
+	 padding-left: var(--gutter-x6);
+    padding-right: var(--gutter-x6);
+}
+
+.bb {
+	border-bottom: 1px solid var(--border);
+}
+
+.bt {
+	border-top: 1px solid var(--border);
+}
+
+.pb-10 {
+		padding-bottom: 70px;
+	}
+	
+	.pt-10 {
+		padding-top: 70px;
+	}
+	
+	.pt-8 {
+		padding-top: 40px;
+	}
+	
+	.pb-8 {
+		padding-bottom: 40px;
+	}
+	
+	.pt-6 {
+		padding-top: 20px;
+	}
+	
+	.pb-6 {
+		padding-bottom: 20px;
+	}
 
 .list-inline {
     display: flex;
     flex-wrap: wrap;
+}
+
+.form-control { 
+padding: 10px 20px;
 }
 
 .txt-yellow {
@@ -38,13 +138,31 @@ a {
 	color: var(--alt);
 }
 
-.bg-prime {
-	background-color: var(--primary);
+.txt-secondary, .txt-secondary a {
+	color: var(--secondary);
 }
 
 .txt-small {
-	font-size: 12px;
+	font-size: 1.2rem;
 }
+
+.h5, h5 {
+	font-size: 2rem;
+}
+
+.mb-20 {
+	margin-bottom: 2rem;
+}
+
+.mb-50 {
+	margin-bottom: 5rem;
+}
+
+.bg-cover {
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 
 .nav-tabs {
 	border: 0;
@@ -52,4 +170,47 @@ a {
     justify-content: center;
 }
 
+.site-header {
+    border-bottom: 1px solid #393b3f;
+}
+
+.sec-subscribe {
+    padding: 14.6% 0;
+}
+
+.hero-content h1 {
+	   font-size: 4rem;
+   }
+
+   .brand-logos figure {
+    margin: 0 20px;
+}
+
+
+.sec-powerful {
+	background-image: url(../images/home/bg-color.png);
+	background-color: #000;	
+}
+
+.subscribe-wrap {
+	max-width: 680px;
+}
+
+.footer-links strong {
+	color:  var(--secondary);
+	font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.footer-links li {
+	margin-bottom: 1rem;
+}
+
+.footer-copy  li + li {
+	margin-left: 4rem;
+}
+
+.footer-links .badge {
+    font-weight: 400;
+}
 
