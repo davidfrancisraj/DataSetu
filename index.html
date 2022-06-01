@@ -24,12 +24,14 @@
                         <a class="navbar-brand me-0" href="#">
 						<img src="images/logo-datasetu.png" alt="logo-datasetu.png" />
 						</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+						<div>
+                        <button id="navToggle" class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span></span>
                         </button>
+						</div>
                     </div>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">                                                              
+                    <div class="collapse navbar-collapse" id="navbarContent">                                                              
                         <ul class="nav navbar-nav site-nav">
                             <li class="active"><a href="#">Home</a></li>
                             <li><a href="#">Product</a></li>
@@ -44,7 +46,7 @@
         </header>
 
         <!-- Main content -->
-        <main class="site-main">
+        <main class="site-main home">
             <section class="hero-content text-center pb-10 pt-10">
                 <div class="container-lg">
                     <h1>Supercharge AI Transformation</h1>
@@ -67,8 +69,8 @@
 
             <section class="top-brands text-center pb-8">
                 <div class="container">
-                    <h5 class="mb-50">Joins Top 100+ Brands Using Everyday</h5>
-                    <div class="brand-logos d-flex flex-wrap justify-content-center">
+                    <h5 class="mb-50" data-aos="fade-up">Joins Top 100+ Brands Using Everyday</h5>
+                    <div class="brand-logos d-flex flex-wrap justify-content-center" data-aos="fade-up">
                         <figure><img src="images/brands/brand-1.png" alt="Brex"/></figure>
                         <figure><img src="images/brands/brand-2.png" alt="openAI"/></figure>
                         <figure><img src="images/brands/brand-3.png" alt="nvdia"/></figure>
@@ -84,17 +86,17 @@
                 <div class="container">
                     <div class="row align-items-center gx-6">
                         <div class="col-md-6">
-                            <p class="text-uppercase">Curate</p>
-                            <h2><span class="txt-yellow">Improve</span> your ML model 
+                            <p class="text-uppercase" data-aos="fade-up">Curate</p>
+                            <h2 data-aos="fade-up"><span class="txt-yellow">Improve</span> your ML model 
 by using the right data.</h2>
-                            <p>Through active learning workflows and uncertainty sampling, you can 
+                            <p data-aos="fade-up">Through active learning workflows and uncertainty sampling, you can 
                                 curate and label the right data–not just more data. 
-                            </p><p>
+                            </p><p data-aos="fade-up">
                                 Cognix allows team to intitively is an intuitive launchpad for 
                                 data-centric AI development.</P>
                         </div>
                         <div class="col-md-6">
-                            <img src="images/home/curate.png" alt="curate" />
+                            <img data-aos="fade-up" data-aos-delay="400" src="images/home/curate/curate.png" alt="curate" />
                         </div>
                     </div>
                 </div>
@@ -102,19 +104,19 @@ by using the right data.</h2>
 
             <section class="tab-sec pb-10">
                 <div class="container">
-                    <ul class="nav nav-tabs pb-8 h5">
+                    <ul class="nav nav-tabs pb-8 h5" data-aos="fade-up">
 
                         <li><a data-bs-toggle="tab" href="#Search"><strong>Search</strong></a></li>
                         <li><a data-bs-toggle="tab"  class="active" href="#Explore"><strong>Explore</strong></a></li>
                         <li><a data-bs-toggle="tab" href="#Visualize"><strong>Visualize</strong></a></li>
                     </ul>
 
-                    <div class="tab-content">
+                    <div class="tab-content" data-aos="fade-up">
 
                         <div id="Search" class="tab-pane fade">
                             <div class="row align-items-center gx-6">
                                 <div class="col-md-6"> 
-                                    <img src="images/home/explore.png" alt="Search" />
+                                    <img src="images/home/curate/search.png" alt="Search" />
                                 </div>
                                 <div class="col-md-6"> 
                                     <p>Search for labeled and unlabeled data using filters for metadata, model inferences, and other attributes. 
@@ -128,7 +130,7 @@ by using the right data.</h2>
                         <div id="Explore" class="tab-pane fade in active show">
                             <div class="row align-items-center gx-6">
                                 <div class="col-md-6"> 
-                                    <img src="images/home/explore.png" alt="explore" />
+                                    <img src="images/home/curate/explore.png" alt="explore" />
                                 </div>
                                 <div class="col-md-6"> 
                                     <p>Model embeddings help you quickly uncover high-level patterns and visually similar data from across all your datasets. Labelbox offers precomputed embeddings by default or you can upload your own via the SDK. </p>
@@ -141,7 +143,7 @@ by using the right data.</h2>
                         <div id="Visualize" class="tab-pane fade">
                             <div class="row align-items-center gx-6">
                                 <div class="col-md-6"> 
-                                    <img src="images/home/explore.png" alt="Visualize" />
+                                    <img src="images/home/curate/visualize.png" alt="Visualize" />
                                 </div>
                                 <div class="col-md-6"> 
                                     <p>Labelbox allows you to visualize and search for your raw unlabeled data, metadata, labeled ground truth, and model inferences in one place. </p>
@@ -160,16 +162,16 @@ by using the right data.</h2>
                 <div class="container">
                     <div class="row align-items-center gx-6">
                         <div class="col-md-6">
-                            <p class="text-uppercase">Annotate</p>
-                            <h2><span class="txt-blue">Powerful</span> annotation 
+                            <p class="text-uppercase" data-aos="fade-up">Annotate</p>
+                            <h2 data-aos="fade-up"><span class="txt-blue">Powerful</span> annotation 
 tools at your fingertips</h2>
-                            <p>Designed to give you the right annotation tools for every task, 
+                            <p data-aos="fade-up">Designed to give you the right annotation tools for every task, 
 Cognix is engineered for precision and speed.
 
                             </p>
                         </div>
                         <div class="col-md-6">
-                            <img src="images/home/annotate.png" alt="Annotate" />
+                            <img   data-aos="fade-up" data-aos-delay="400" src="images/home/annotate/annotate.png" alt="Annotate" />
                         </div>
                     </div>
                 </div>
@@ -177,19 +179,19 @@ Cognix is engineered for precision and speed.
 
             <section class="tab-sec">
                 <div class="container">
-                    <ul class="nav nav-tabs pb-8 h5">
+                    <ul class="nav nav-tabs pb-8 h5" data-aos="fade-up">
 
                         <li><a data-bs-toggle="tab" href="#Configure"><strong>Configure</strong></a></li>
                         <li><a data-bs-toggle="tab" class="active" href="#Analyze"><strong>Analyze</strong></a></li>
                         <li><a data-bs-toggle="tab" href="#Automate"><strong>Automate</strong></a></li>
                     </ul>
 
-                    <div class="tab-content">
+                    <div class="tab-content" data-aos="fade-up">
 
                         <div id="Configure" class="tab-pane fade">
                             <div class="row align-items-center gx-6">
                                 <div class="col-md-6"> 
-                                    <img src="images/home/analyze.png" alt="Configure" />
+                                    <img src="images/home/annotate/configure.png" alt="Configure" />
                                 </div>
                                 <div class="col-md-6"> 
                                     <p>Import data from any source and annotate the data types you need including images, video, text, audio, medical imagery, tiled imagery, and custom editor.</p>
@@ -202,7 +204,7 @@ Cognix is engineered for precision and speed.
                         <div id="Analyze" class="tab-pane fade in active show">
                             <div class="row align-items-center gx-6">
                                 <div class="col-md-6"> 
-                                    <img src="images/home/analyze.png" alt="Analyze" />
+                                    <img src="images/home/annotate/analyze.png" alt="Analyze" />
                                 </div>
                                 <div class="col-md-6"> 
                                     <p>Actionable analytics for team performance that show you the efficiency of your projects and labelers. Optimize for time, costs, and quality through performance tools, labeling timer, and more.
@@ -215,7 +217,7 @@ Cognix is engineered for precision and speed.
                         <div id="Automate" class="tab-pane fade">
                             <div class="row align-items-center gx-6">
                                 <div class="col-md-6"> 
-                                    <img src="images/home/analyze.png" alt="Automate" />
+                                    <img src="images/home/annotate/automate.png" alt="Automate" />
                                 </div>
                                 <div class="col-md-6"> 
                                     <p>Use model-assisted labeling to import pre-labeled data for labeling teams to review and adjust directly. The result: savings of 50-70% in terms of annotation costs.
@@ -232,9 +234,9 @@ Cognix is engineered for precision and speed.
             <section class="sec-subscribe text-center bg-primary">
                 <div class="container">
 				<div class="subscribe-wrap mx-auto">
-                    <h2 class="mb-4 mb-xl-5 px-4">Subscribe our newsletter
+                    <h2 data-aos="fade-up"class="mb-4 mb-xl-5 px-4">Subscribe our newsletter
                         to get new updates</h2>
-                    <form class="pt-5">
+                    <form data-aos="fade-up" class="pt-5">
                         <div class="input-group">
                             <input type="email" class="form-control" placeholder="Enter your email" required>
                             <div class="input-group-btn">
@@ -254,16 +256,20 @@ Cognix is engineered for precision and speed.
 
         <!-- Site Footer -->
         <footer class="site-footer bg-white">
-            <div class="footer-social bb txt-secondary pt-6 pb-6">
+            <div data-aos="fade-up" class="footer-social bb txt-secondary pt-6 pb-6">
                 <div class="container">
-                   <strong class="d-block d-md-inline"> Follow us</strong>
+                   <strong class="d-block d-md-inline me-md-4"> Follow us</strong>
+				   <a href="#" title=""><i class="im im-twitter"></i></a> 
+				   <a href="#" title=""><i class="im im-linkedin"></i></a> 
+				   <a href="#" title=""><i class="im im-facebook"></i></a> 
+				   <a href="#" title=""><i class="im im-youtube"></i></a> 
                 </div>
             </div>
             
             <div class="footer-links txt-alt txt-small pt-6 pb-6">
                 <div class="container">
                     <div class="d-flex justify-content-between flex-wrap">
-                        <div class="link-item">
+                        <div data-aos="fade-up" class="link-item">
                             <strong class="mb-20 d-block">Products</strong>
                             <ul class="list-unstyled">
                                 <li><a href="#">Platform</a></li>
@@ -272,7 +278,7 @@ Cognix is engineered for precision and speed.
                                 <li><a href="#">Data Doc AI</a></li>
                             </ul>
                         </div>
-                        <div class="link-item">
+                        <div data-aos="fade-up" data-aos-delay="200"class="link-item">
                             <strong class="mb-20 d-block">COMPANY</strong>
                             <ul class="list-unstyled">
                                 <li><a href="#">About</a></li>
@@ -281,7 +287,7 @@ Cognix is engineered for precision and speed.
                                 <li><a href="#">Press & Media</a></li>
                             </ul>
                         </div>
-                        <div class="link-item">
+                        <div data-aos="fade-up" data-aos-delay="300" class="link-item">
                             <strong class="mb-20 d-block">Resources</strong>
                             <ul class="list-unstyled">
                                 <li><a href="#">Blog</a></li>
@@ -290,7 +296,7 @@ Cognix is engineered for precision and speed.
                                 <li><a href="#">Documentation</a></li>
                             </ul>
                         </div>
-                        <div class="link-item">
+                        <div data-aos="fade-up" data-aos-delay="400" class="link-item">
                             <strong class="mb-20 d-block">CONTACT</strong>
                             <ul class="list-unstyled ">
                                 <li><a href="#">sales@datasetu.com</a></li>
@@ -323,7 +329,10 @@ Cognix is engineered for precision and speed.
         </footer>
 
         <!-- Option 1: Bootstrap Bundle with Popper -->
-        <script src="js/bootstrap.bundle.min.js" ></script>
+		<script src="js/bootstrap.bundle.min.js" ></script>
+		<script src="js/jquery.min.js" ></script>
+		<script src="js/aos.js" ></script>
+        <script src="js/custom.js" ></script>
 
 
 

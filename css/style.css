@@ -9,6 +9,40 @@
 	--gutter-x6: 3rem;
 }
 
+@font-face {
+	font-family: 'icomoon';
+  src: url(../font/social/icomoon.woff) format("woff"),
+  url(../font/social/icomoon.ttf) format("ttf");
+}
+
+.im {
+	font-family: 'icomoon';
+	font-style: normal;
+}
+
+.im-heart:before {
+  content: "\e9da";
+}
+.im-cross:before {
+  content: "\ea0f";
+}
+.im-ctrl:before {
+  content: "\ea50";
+}
+.im-facebook:before {
+  content: "\ea90";
+}
+.im-twitter:before {
+  content: "\ea96";
+}
+.im-youtube:before {
+  content: "\ea9d";
+}
+.im-linkedin:before {
+  content: "\eaca";
+}
+
+
 html {
 	font-size: 10px;
 }
@@ -186,11 +220,12 @@ padding: 10px 20px;
 
    .brand-logos figure {
     margin: 0 20px;
+	padding-bottom: 20px;
 }
 
 
 .sec-powerful {
-	background-image: url(../images/home/bg-color.png);
+	background-image: url(../images/home/bg-color.jpg);
 	background-color: #000;	
 }
 
@@ -202,6 +237,20 @@ padding: 10px 20px;
 	color:  var(--secondary);
 	font-size: 1.3rem;
     text-transform: uppercase;
+}
+
+.site-footer a {
+	transition: color .4s ease;
+}
+
+.site-footer a:hover {
+	color: var(--primary);
+	
+}
+
+.footer-social a {
+    display: inline-block;
+    margin: 0 10px;
 }
 
 .footer-links li {
@@ -258,3 +307,10 @@ padding: 10px 20px;
 	 color: var(--yellow);
 	
 }	
+
+[data-aos][data-aos][data-aos-duration="400"], body[data-aos-duration="400"] [data-aos] {
+    transition-duration: .7s;
+}
+[data-aos=fade-up] {
+    transform: translate3d(0,40px,0);
+}
