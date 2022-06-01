@@ -19,6 +19,9 @@
 	.subscribe-wrap .btn {
 		border-radius: 0 6px 6px 0;
 	}
+	.sec-powerful .nav-tabs li, .sec-improve .nav-tabs li {
+	margin: 0 25px;
+}	
 }
 
 @media (min-width: 992px){
@@ -135,6 +138,10 @@ font-size: 1.8rem;
 border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
+.sec-powerful .nav-tabs li, .sec-improve .nav-tabs li {
+	margin: 0 50px;
+}	
    
 }
 

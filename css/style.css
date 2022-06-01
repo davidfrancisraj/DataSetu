@@ -36,7 +36,9 @@ h1, h2, h3, h4, h5, h6 {
 p {
 	margin-bottom: 2rem;
 }
-
+b, strong {
+    font-weight: 600;
+}
 .container-fluid, .container, .container-lg { 
     padding-left: 30px;
     padding-right: 30px;
@@ -214,3 +216,45 @@ padding: 10px 20px;
     font-weight: 400;
 }
 
+.sec-powerful .nav-tabs li, .sec-improve .nav-tabs li {
+	margin: 0 10px;
+}
+
+.sec-powerful .nav-tabs a:after, .sec-improve .nav-tabs a:after {
+	position: absolute;
+	content: '';
+	border-bottom: 1px solid var(--yellow);
+	    width: 100%;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: .4s ease;
+    transform: scale(0);
+}	
+
+.sec-powerful .nav-tabs a:after {
+	border-bottom-color: var(--blue);
+}
+
+.sec-powerful .nav-tabs .active:after,  .sec-improve .nav-tabs .active:after {
+	 opacity: 1;
+	 transform: scale(1);
+}	
+ 
+	
+
+.sec-powerful .nav-tabs a, .sec-improve .nav-tabs a {
+	color: #fff;
+	padding-bottom: 10px;
+	position: relative;
+    display: block;
+}	
+
+.sec-powerful .nav-tabs .active {
+	color: var(--blue);
+}	
+ 
+ .sec-improve .nav-tabs .active {
+	 color: var(--yellow);
+	
+}	
